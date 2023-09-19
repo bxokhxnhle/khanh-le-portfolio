@@ -134,10 +134,10 @@ export default function Home() {
           <h4 className="text-medium-blue text-xl md:text-3xl">What I do outside of work</h4>
           <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-8 pt-7 pb-8 items-stretch">
             <div className="col-span-1 flex flex-col">
-              <div className="max-w-max lg:max-w-[544px] rounded-t-[15px] overflow-hidden shadow-lg">
-                <Image src={versa} alt="Personal Website" />
+              <div className="max-w-max lg:max-w-[544px] rounded-t-[15px] overflow-hidden">
+                <Image src={portfolio} alt="Personal Website" />
               </div>
-              <div className="max-w-max lg:max-w-[544px] rounded-b-[15px] p-8 bg-dark-blue grow">
+              <div className="max-w-max lg:max-w-[544px] rounded-b-[15px] p-8 bg-dark-blue shadow-lg grow">
                 <div className="underline text-medium-blue font-medium text-xl md:text-2xl xl:text-3xl"><a href="https://github.com/bxokhxnhle/khanh-le-portfolio" target="_blank">Personal Website ↗</a></div>
                 <p className="font-normal text-light-grey text-base lg:text-lg pt-4">Designed and coded a responsive website from scratch to showcase experiences</p>
                 <ul className="flex flex-wrap text-sm md:text-base xl:text-lg text-dark-blue gap-x-2.5 gap-y-2 pt-5">
