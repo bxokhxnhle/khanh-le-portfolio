@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -11,6 +12,10 @@ const config: Config = {
       maxWidth: {
         'desktop': '70rem',
         'mobile': '22.5rem', 
+      },
+      screens: {
+        'desktop': '1440px',
+        'mobile': '400px',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
