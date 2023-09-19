@@ -6,8 +6,8 @@ export default function Home() {
     <div className="bg-light-grey">
       <div className="max-w-mobile mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-desktop">
         <nav className="py-10 flex flex-wrap justify-between">
-          <h1 className="text-dark-blue font-bold text-lg desktop:text-4xl">Khanh Le</h1>
-          <div className="flex items-center gap-x-8 text-dark-blue font-medium text-lgdesktop:text-xl">
+          <h1 className="text-dark-blue font-bold text-lg desktop:text-4xl"><a href="/">Khanh Le</a></h1>
+          <div className="flex items-center gap-x-8 text-dark-blue font-medium text-lg desktop:text-xl">
             <Link href="/">
               <BsFillMoonStarsFill className="cursor-pointertext-lg desktop:text-2xl fill-dark-blue"/>
             </Link>
