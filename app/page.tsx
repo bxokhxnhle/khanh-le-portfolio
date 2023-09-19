@@ -32,7 +32,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/baokhanhle/" target="_blank"><Image src={linkedInIcon} alt="LinkedIn" /></a>
             <a href="https://github.com/bxokhxnhle" target="_blank"><Image src={gitHubIcon} alt="GitHub" /></a>
             <a href="mailto:khanh.le@uwaterloo.ca" target="_blank"><Image src={emailIcon} alt="Email" /></a>
-            <a href="https://drive.google.com/file/d/1X3oPHDxcHcgUz8VV1UddrRW-SbZQX61F/view?usp=sharing" target="_blank"><Image src={resumeIcon} alt="Resume" /></a>
+            <a href="https://drive.google.com/file/d/1KmHpJAHzPRkP7GHA6_y2_s6Kc6G_YF5o/view?usp=sharing" target="_blank"><Image src={resumeIcon} alt="Resume" /></a>
           </div>
           <div className="text-dark-blue text-lg pt-14 md:pt-20">Scroll to see my work  ↓</div>
         </section>
@@ -43,7 +43,7 @@ export default function Home() {
             <div className="basis-full xl:basis-3/5 font-normal text-lg leading-6">
             <p className="pb-5 hidden md:flex text-dark-blue">I was born and raised in Ho Chi Minh City, Vietnam – an energetic and bustling area. The city has infiltrated my code; I enjoy people watching and taking a sip of coffee every morning. I have grown up living amongst all kinds of people around Vietnam and the world, making me open to all kinds of experiences and enthusiastic about embracing anomalies.</p>
             <p className="pb-5 text-dark-blue">I am passionate about technology and healthcare, which has led me to study <a href="https://uwaterloo.ca/biomedical-engineering" target="_blank"><span className="font-bold">Biomedical Engineering</span></a> at the University of Waterloo. Outside of school, I enjoy dancing, photography, graphic design, and badminton. A goal of mine is to touch on more areas of software-focused BME, immersing myself in academia, and helping to build stronger communities.</p>
-            <p>Previously SWE @ <a href="https://versa-networks.com/" target="_blank"><span className="font-bold">Versa Networks</span></a>, <a href="https://www.loblawdigital.co/" target="_blank"><span className="font-bold">Loblaw Digital</span></a>, <a href="https://www.purolator.com/" target="_blank"><span className="font-bold">Purolator</span></a>.<br />Seeking Winter & Summer 2024 Internship Opportunities! Get my <a href="https://drive.google.com/file/d/1X3oPHDxcHcgUz8VV1UddrRW-SbZQX61F/view?usp=sharing" target="_blank"><span className="underline">resume ↗</span></a></p>
+            <p>Previously SWE @ <a href="https://versa-networks.com/" target="_blank"><span className="font-bold">Versa Networks</span></a>, <a href="https://www.loblawdigital.co/" target="_blank"><span className="font-bold">Loblaw Digital</span></a>, <a href="https://www.purolator.com/" target="_blank"><span className="font-bold">Purolator</span></a>.<br />Seeking Winter & Summer 2024 Internship Opportunities! Get my <a href="https://drive.google.com/file/d/1KmHpJAHzPRkP7GHA6_y2_s6Kc6G_YF5o/view?usp=sharing" target="_blank"><span className="underline">resume ↗</span></a></p>
             </div>
             <div className="xl:basis-1/3">
               <Image src={aboutMe} alt="profile picture" />
