@@ -143,8 +143,10 @@ export default function Home() {
                 <ul className="flex flex-wrap text-sm md:text-base xl:text-lg text-dark-blue gap-x-2.5 gap-y-2 pt-5">
                   <li className="bg-light-grey px-2 py-1 rounded-lg">Next.js</li>
                   <li className="bg-light-grey px-2 py-1 rounded-lg">React.js</li>
+                  <li className="bg-light-grey px-2 py-1 rounded-lg">TypeScript</li>
                   <li className="bg-light-grey px-2 py-1 rounded-lg">Tailwind CSS</li>
                   <li className="bg-light-grey px-2 py-1 rounded-lg">Figma</li>
+                  <li className="bg-light-grey px-2 py-1 rounded-lg">Frontend Development</li>
                 </ul>
               </div>
             </div>
