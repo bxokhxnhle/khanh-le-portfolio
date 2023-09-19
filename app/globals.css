@@ -20,5 +20,5 @@ body {
 
 @font-face {
   font-family: "Mabry Pro";
-  src: url("../public/mabry-regular-pro.ttf"), url("../public/Mabry\ Pro\ Medium.ttf"), url("../public/MabryPro-Bold.ttf"), url("../public/MabryPro-Italic.ttf");
+  src: url("../public/mabry-regular-pro.ttf");
 }
