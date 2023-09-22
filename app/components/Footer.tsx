@@ -8,9 +8,9 @@ export default function Home() {
           <div className="flex flex-row flex-wrap justify-between gap-y-4">
             <div className="text-light-blue text-xl font-medium">Curated with :) by Khanh Le</div>
             <div className="flex items-center gap-x-8 text-dark-blue font-medium text-xl underline">
-            <Link href="mailto:khanh.le@uwaterloo.ca">Email ↗</Link>
-            <Link href="https://linkedin.com/in/baokhanhle/" target="_blank">LinkedIn ↗</Link>
-            <Link href="https://github.com/bxokhxnhle" target="_blank">GitHub ↗</Link>
+            <Link className="text-lg md:text-xl" href="mailto:khanh.le@uwaterloo.ca">Email ↗</Link>
+            <Link className="text-lg md:text-xl" href="https://linkedin.com/in/baokhanhle/" target="_blank">LinkedIn ↗</Link>
+            <Link className="text-lg md:text-xl" href="https://github.com/bxokhxnhle" target="_blank">GitHub ↗</Link>
           </div>
           </div>
         </footer>
