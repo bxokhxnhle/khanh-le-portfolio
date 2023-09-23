@@ -16,14 +16,13 @@ export default function Home() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["developer & designer ", "engineering student", "badminton enthusiast", "day dreamer", "avid photographer"],
-      typeSpeed: 75,
+      strings: [ "developer x designer", "engineering student", "badminton enthusiast", "day dreamer", "avid photographer"],
+      typeSpeed: 50,
       backSpeed: 75,
       backDelay: 100,
       showCursor: true,
       cursorChar: '|',
-      loop: true,
-      shuffle: true
+      loop: true
     })
 
     return () => {
@@ -43,7 +42,7 @@ export default function Home() {
             <Link href="mailto:khanh.le@uwaterloo.ca"><Image src={emailIcon} alt="Email" /></Link>
             <Link href="https://drive.google.com/file/d/1wZP0AZFZija0WAbV3j017V-bQRDVJl3i/view?usp=sharing" target="_blank"><Image src={resumeIcon} alt="Resume" /></Link>
           </div>
-        <div className="text-dark-blue text-lg pt-14 md:pt-20">Scroll to see my work  ↓</div>
+        <div className="text-dark-blue text-lg pt-14 md:pt-20">Check out my adventure ↓</div>
         </section>
       </div>
     </div>
