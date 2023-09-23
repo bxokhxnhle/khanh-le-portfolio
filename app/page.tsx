@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
 
-      <main className="bg-light-grey -mt-1 md:pt-10">
+      <main className="bg-light-grey">
         <div className="min-h-screen max-w-mobile mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-desktop">
         <section className="pt-12 md:pt-16" id="about">
           <h2 className="text-light-blue text-4xl md:text-5xl font-medium">About me</h2>

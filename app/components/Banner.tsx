@@ -32,7 +32,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="bg-light-grey">
+    <div className="bg-light-grey -mt-1 md:pt-10">
       <div className="max-w-mobile mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-desktop">
         <section>
           <div className="font-medium text-4xl md:text-5xl text-dark-blue pb-8 md:pb-5">Hi there, I’m <span className="text-light-blue">Khanh </span>- <span ref={el}></span></div>
