@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import mabryPro from 'next/font/local'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Banner from './components/Banner'
 
 const inter = Inter({ subsets: ['latin'] })
 const mabry = mabryPro({ src: '../public/mabry-regular-pro.ttf'})
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={mabry.className}>
         <Navbar />
+        <Banner />
         {children}
         <Footer />
       </body>

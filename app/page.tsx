@@ -1,9 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import linkedInIcon from "../public/linkedin.svg"
-import gitHubIcon from "../public/github.svg"
-import emailIcon from "../public/mail.svg"
-import resumeIcon from "../public/resume.svg"
 import aboutMe from "../public/about me.png"
 import versa from "../public/versa.png"
 import loblaw from "../public/loblaw.png"
@@ -25,17 +21,6 @@ export default function Home() {
 
       <main className="bg-light-grey -mt-1 md:pt-10">
         <div className="min-h-screen max-w-mobile mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-desktop">
-        <section>
-          <div className="font-medium text-4xl md:text-5xl text-dark-blue pb-8 md:pb-5">Hi there, I’m <span className="text-light-blue">Khanh</span> - developer & designer</div>
-          <div className="font-medium text-xl md:text-4xl text-dark-blue leading-6 md:leading-10 pb-8 md:pb-10">a health tech enthusiast driven by the idea of integrating technology and healthcare to unveil novel solutions to health challenges ٩(๑❛ᴗ❛๑)۶</div>
-          <div className="flex justify-start gap-x-6">
-            <a href="https://www.linkedin.com/in/baokhanhle/" target="_blank"><Image src={linkedInIcon} alt="LinkedIn" /></a>
-            <a href="https://github.com/bxokhxnhle" target="_blank"><Image src={gitHubIcon} alt="GitHub" /></a>
-            <a href="mailto:khanh.le@uwaterloo.ca" target="_blank"><Image src={emailIcon} alt="Email" /></a>
-            <a href="https://drive.google.com/file/d/1pd0cFe24Rm1hSH1w8CrT1BQLzJ2mpy3T/view?usp=sharing" target="_blank"><Image src={resumeIcon} alt="Resume" /></a>
-          </div>
-          <div className="text-dark-blue text-lg pt-14 md:pt-20">Scroll to see my work  ↓</div>
-        </section>
         <section className="pt-12 md:pt-16" id="about">
           <h2 className="text-light-blue text-4xl md:text-5xl font-medium">About me</h2>
           <h4 className="text-medium-blue text-xl md:text-3xl">My background</h4>
@@ -43,7 +28,7 @@ export default function Home() {
             <div className="basis-full xl:basis-3/5 font-normal text-lg leading-6">
             <p className="pb-5 hidden md:flex text-dark-blue">I was born and raised in Ho Chi Minh City, Vietnam – an energetic and bustling area. The city has infiltrated my core; I enjoy people watching and taking a sip of coffee every morning. I have grown up living amongst all kinds of people around Vietnam and the world, making me open to all kinds of experiences and enthusiastic about embracing anomalies.</p>
             <p className="pb-5 text-dark-blue">I am passionate about technology and healthcare, which has led me to study <a href="https://uwaterloo.ca/biomedical-engineering" target="_blank"><span className="font-bold">Biomedical Engineering</span></a> at the University of Waterloo. Outside of school, I enjoy dancing, photography, graphic design, and badminton. A goal of mine is to touch on more areas of software-focused BME, immersing myself in academia, and helping to build stronger communities.</p>
-            <p>Previously SWE @ <a href="https://versa-networks.com/" target="_blank"><span className="font-bold">Versa Networks</span></a>, <a href="https://www.loblawdigital.co/" target="_blank"><span className="font-bold">Loblaw Digital</span></a>, <a href="https://www.purolator.com/" target="_blank"><span className="font-bold">Purolator</span></a>.<br />Seeking Winter & Summer 2024 Internship Opportunities! Get my <a href="https://drive.google.com/file/d/1pd0cFe24Rm1hSH1w8CrT1BQLzJ2mpy3T/view?usp=sharing" target="_blank"><span className="underline">resume ↗</span></a></p>
+            <p>Previously SWE @ <a href="https://versa-networks.com/" target="_blank"><span className="font-bold">Versa Networks</span></a>, <a href="https://www.loblawdigital.co/" target="_blank"><span className="font-bold">Loblaw Digital</span></a>, <a href="https://www.purolator.com/" target="_blank"><span className="font-bold">Purolator</span></a>.<br />Seeking Winter & Summer 2024 Internship Opportunities! Get my <a href="hhttps://drive.google.com/file/d/1wZP0AZFZija0WAbV3j017V-bQRDVJl3i/view?usp=sharing" target="_blank"><span className="underline">resume ↗</span></a></p>
             </div>
             <div className="xl:basis-1/3">
               <Image src={aboutMe} alt="profile picture" />
