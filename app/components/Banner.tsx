@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [ "developer x designer", "engineering student", "badminton enthusiast", "daydreamer/overthinker", "avid photographer"],
+      strings: [ "developer x designer", "engineering student", "badminton enthusiast", "daydreamer", "avid photographer"],
       typeSpeed: 50,
       backSpeed: 75,
       backDelay: 100,
@@ -40,7 +40,7 @@ export default function Home() {
             <Link href="https://www.linkedin.com/in/baokhanhle/" target="_blank"><Image src={linkedInIcon} alt="LinkedIn" /></Link>
             <Link href="https://github.com/bxokhxnhle" target="_blank"><Image src={gitHubIcon} alt="GitHub" /></Link>
             <Link href="mailto:khanh.le@uwaterloo.ca"><Image src={emailIcon} alt="Email" /></Link>
-            <Link href="https://drive.google.com/file/d/1wZP0AZFZija0WAbV3j017V-bQRDVJl3i/view?usp=sharing" target="_blank"><Image src={resumeIcon} alt="Resume" /></Link>
+            <Link href="https://drive.google.com/file/d/1Um-_rE17upYQryH7cFDOwAjfnY5Er44-/view?usp=sharing" target="_blank"><Image src={resumeIcon} alt="Resume" /></Link>
           </div>
         <div className="text-dark-blue text-lg pt-14 md:pt-20">Check out my adventure ↓</div>
         </section>

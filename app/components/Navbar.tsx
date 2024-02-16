@@ -14,7 +14,7 @@ export default function Home() {
             <Link href="#about" className="hidden md:flex">About</Link>
             <Link href="#work" className="hidden md:flex">Work</Link>
             <Link href="#projects" className="hidden md:flex">Projects</Link>
-            <Link href="https://drive.google.com/file/d/1wZP0AZFZija0WAbV3j017V-bQRDVJl3i/view?usp=sharing" target="_blank">Resume</Link>
+            <Link href="https://drive.google.com/file/d/1Um-_rE17upYQryH7cFDOwAjfnY5Er44-/view?usp=sharing" target="_blank">Resume</Link>
           </div>
         </nav>
       </div>
