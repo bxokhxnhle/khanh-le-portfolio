@@ -31,11 +31,11 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="bg-light-grey -mt-1 md:pt-10">
+    <div className="mt-1 md:pt-10">
       <div className="max-w-mobile mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-desktop">
         <section>
-          <div className="font-medium text-4xl md:text-5xl text-dark-blue h-32 md:h-44 xl:h-32">Hi there, I’m <span className="text-light-blue">Khanh </span>- <span ref={el}></span></div>
-          <div className="font-medium text-xl md:text-4xl text-dark-blue leading-6 md:leading-10 pb-8 md:pb-10">a health tech enthusiast driven by the idea of integrating technology and healthcare to unveil novel solutions to health challenges ٩(๑❛ᴗ❛๑)۶</div>
+          <div className="font-medium text-4xl md:text-5xl h-32 md:h-44 xl:h-32">Hi there, I’m <span className="text-light-blue">Khanh </span>- <span ref={el}></span></div>
+          <div className="font-medium text-xl md:text-4xl leading-6 md:leading-10 pb-8 md:pb-10">a health tech enthusiast driven by the idea of integrating technology and healthcare to unveil novel solutions to health challenges ٩(๑❛ᴗ❛๑)۶</div>
           <div className="flex justify-start gap-x-6">
             <Link href="https://www.linkedin.com/in/baokhanhle/" target="_blank"><Image src={linkedInIcon} alt="LinkedIn" /></Link>
             <Link href="https://github.com/bxokhxnhle" target="_blank"><Image src={gitHubIcon} alt="GitHub" /></Link>

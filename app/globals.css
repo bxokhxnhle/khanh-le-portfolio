@@ -6,17 +6,39 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background: theme('colors.dark-blue')
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: theme('colors.light-grey');
+  color: theme('colors.dark-blue')
 }
+
+.card-body {
+  background-color: theme('colors.dark-blue');
+  color: theme('colors.light-grey')
+}
+
+.pill {
+  background-color: theme('colors.light-grey');
+  color: theme('colors.dark-blue');
+}
+
+[data-theme='dark'] body {
+  background-color: theme('colors.dark-blue');
+  color: theme('colors.light-grey');
+}
+
+[data-theme='dark'] .card-body {
+  background-color: theme('colors.light-grey');
+  color: theme('colors.dark-blue')
+}
+
+[data-theme='dark'] .pill {
+  background-color: theme('colors.dark-blue');
+  color: theme('colors.light-grey');
+}
+
 
 @font-face {
   font-family: "Mabry Pro";

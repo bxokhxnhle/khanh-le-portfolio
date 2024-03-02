@@ -5,6 +5,8 @@ import mabryPro from 'next/font/local'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Banner from './components/Banner'
+import ThemeProvider from './provider'
+import ThemeSwitch from './components/ThemeSwitch'
 
 const inter = Inter({ subsets: ['latin'] })
 const mabry = mabryPro({ src: '../public/mabry-regular-pro.ttf'})
@@ -20,12 +22,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={mabry.className}>
-        <Navbar />
-        <Banner />
-        {children}
-        <Footer />
+        <ThemeProvider defaultTheme="system" enableSystem>
+          {/* <ThemeSwitch /> */}
+          <Navbar />
+          <Banner />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )
