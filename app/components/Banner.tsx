@@ -42,7 +42,7 @@ export default function Home() {
             <Link href="mailto:khanh.le@uwaterloo.ca"><Image src={emailIcon} alt="Email" /></Link>
             <Link href="https://drive.google.com/file/d/1Um-_rE17upYQryH7cFDOwAjfnY5Er44-/view?usp=sharing" target="_blank"><Image src={resumeIcon} alt="Resume" /></Link>
           </div>
-        <div className="text-dark-blue text-lg pt-14 md:pt-20">Check out my adventure ↓</div>
+        <div className="text-lg pt-14 md:pt-20">Check out my adventure ↓</div>
         </section>
       </div>
     </div>
