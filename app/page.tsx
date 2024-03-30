@@ -44,9 +44,9 @@ export default function Home() {
               <div className="spotify-container flex items-center p-5">
                 <BsSpotify className="opacity-90 spotify-icon shrink-0" size="40px" alt="Spotify" />
                 <div className="ml-6 md:ml-5">
-                  <SpotifyCurrentlyPlaying />
+                  {/* <SpotifyCurrentlyPlaying /> */}
                   {/* <SpotifyRecentlyPlayed /> */}
-                  {/* <SpotifyOnRepeat /> */}
+                  <SpotifyOnRepeat />
                 </div>
               </div>
             </div>
