@@ -15,11 +15,11 @@ export default function ThemeSwitch() {
   }
 
   if (resolvedTheme === 'dark') {
-    return <BsFillSunFill className="cursor-pointer text-lg desktop:text-2xl fill-light-grey" onClick={() => setTheme('light')} />
+    return <BsFillSunFill className="cursor-pointer text-lg desktop:text-2xl fill-green-1" onClick={() => setTheme('light')} />
   }
 
   if (resolvedTheme === 'light') {
-    return <BsFillMoonStarsFill className="cursor-pointer text-lg desktop:text-2xl fill-dark-blue" onClick={() => setTheme('dark')} />
+    return <BsFillMoonStarsFill className="cursor-pointer text-lg desktop:text-2xl fill-green-3" onClick={() => setTheme('dark')} />
   }
 
 }

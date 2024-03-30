@@ -27,14 +27,24 @@ const config: Config = {
         'medium-blue': '#5A6794',
         'dark-blue': '#1C2135',
         'light-grey': '#E7E9EE',
+        'beige': '#EDE7DE',
+        'green-1': '#D4EDE4',
+        'green-2': '#A1CEC5',
+        'green-3': '#025A4E',
+        'green-4': '#4C6763',
+        'green-5': '#364442',
+        'green-6': '#233831'
+      },
+      flexBasis: {
+        '1/7': '14.2857143%',
+        '2/7': '28.5714286%',
+        '3/7': '42.8571429%',
+        '4/7': '57.1428571%',
+        '5/7': '71.4285714%',
+        '6/7': '85.7142857%',
       },
       fontFamily: {
         'mabry-pro': "Mabry Pro",
-      },
-      fontWeight: {
-        'normal': '400',
-        'medium': '500',
-        'bold': '700',
       },
       fontSize: {
         '3xl': '1.75rem',

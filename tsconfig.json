@@ -23,6 +23,6 @@
     },
     "typeRoots": [ "./typings", "./node_modules/@types"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/SpotifyTrack.jsx", "app/components/spotify/SpotifyAPI.js"],
   "exclude": ["node_modules"]
 }

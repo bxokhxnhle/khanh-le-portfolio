@@ -6,39 +6,87 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --background: theme('colors.dark-blue')
+  --background: theme('colors.beige')
 }
 
 body {
-  background-color: theme('colors.light-grey');
-  color: theme('colors.dark-blue')
+  background-color: theme('colors.beige');
+  color: theme('colors.green-5');
+}
+
+[data-theme='light'] .nav, .name, .icon, h2, h4, .links {
+  color: theme('colors.green-3');
+}
+
+.icon:hover {
+  color: theme('colors.green-5');
+}
+
+.spotify-container {
+  background-color: theme('colors.green-3');
 }
 
 .card-body {
-  background-color: theme('colors.dark-blue');
-  color: theme('colors.light-grey')
+  background-color: theme('colors.green-6');
+  color: theme('colors.green-1')
 }
 
 .pill {
-  background-color: theme('colors.light-grey');
-  color: theme('colors.dark-blue');
+  background-color: theme('colors.green-1');
+  color: theme('colors.green-6');
 }
 
-[data-theme='dark'] body {
-  background-color: theme('colors.dark-blue');
-  color: theme('colors.light-grey');
+.title {
+  color: theme('colors.green-2');
+}
+
+.spotify-icon, .songs {
+  color: theme('colors.beige');
+}
+
+.on-repeat, [data-theme='dark'] .icon:hover {
+  color: theme('colors.green-1');
+}
+
+/* .nav-link:hover {
+  color: theme('colors.green-5');
+} */
+
+[data-theme='dark'] body, [data-theme='dark'] .links {
+  background-color: theme('colors.green-6');
+  color: theme('colors.green-1');
+}
+
+[data-theme='dark'] .name, [data-theme='dark'] .icon, [data-theme='dark'] h2,
+[data-theme='dark'] h4, [data-theme='dark'] .footnote  {
+  color: theme('colors.green-2');
+}
+
+[data-theme='dark'] .spotify-container {
+  background-color: theme('colors.green-1');
+}
+
+[data-theme='dark'] .spotify-icon, [data-theme='dark'] .title {
+  color: theme('colors.green-3');
+}
+
+[data-theme='dark'] .on-repeat {
+  color: theme('colors.green-4');
+}
+
+[data-theme='dark'] .songs {
+  color: theme('colors.green-6');
 }
 
 [data-theme='dark'] .card-body {
-  background-color: theme('colors.light-grey');
-  color: theme('colors.dark-blue')
+  background-color: theme('colors.beige');
+  color: theme('colors.green-5')
 }
 
 [data-theme='dark'] .pill {
-  background-color: theme('colors.dark-blue');
-  color: theme('colors.light-grey');
+  background-color: theme('colors.green-6');
+  color: theme('colors.green-1');
 }
-
 
 @font-face {
   font-family: "Mabry Pro";
