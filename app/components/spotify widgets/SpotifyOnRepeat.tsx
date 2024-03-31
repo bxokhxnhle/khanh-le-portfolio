@@ -5,8 +5,8 @@ import { useState, useEffect } from "react"
 
 const client_id = process.env.SPOTIFY_CLIENT_ID
 const client_secret = process.env.SPOTIFY_CLIENT_SECRET
-const refresh_token = process.env.NEXT_PUBLIC_ON_REPEAT_SPOTIFY_REFRESH_TOKEN
-const basic = process.env.NEXT_PUBLIC_SPOTIFY_BASE64_STRING
+const refresh_token = process.env.ON_REPEAT_SPOTIFY_REFRESH_TOKEN
+const basic = process.env.SPOTIFY_BASE64_STRING
 
 const ON_REPEAT_ENDPOINT = 'https://api.spotify.com/v1/playlists/37i9dQZF1Epx8aW9o8k1wA/tracks'
 const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token'
