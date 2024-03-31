@@ -45,8 +45,8 @@ export default function Home() {
                 <BsSpotify className="opacity-90 spotify-icon shrink-0" size="40px" alt="Spotify" />
                 <div className="ml-6 md:ml-5">
                   {/* <SpotifyCurrentlyPlaying /> */}
-                  {/* <SpotifyRecentlyPlayed /> */}
-                  <SpotifyOnRepeat />
+                  <SpotifyRecentlyPlayed />
+                  {/* <SpotifyOnRepeat /> */}
                 </div>
               </div>
             </div>
