@@ -6,86 +6,119 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --background: theme('colors.beige')
+  --background: theme("colors.beige");
 }
 
 body {
-  background-color: theme('colors.beige');
-  color: theme('colors.green-5');
+  background-color: theme("colors.beige");
+  color: theme("colors.green-5");
 }
 
-[data-theme='light'] .nav, .name, .icon, h2, h4, .links {
-  color: theme('colors.green-3');
+.nav-container {
+  background: linear-gradient(theme("colors.beige"), transparent);
+}
+
+[data-theme="light"] .nav,
+.name,
+.icon,
+h2,
+h4,
+.links {
+  color: theme("colors.green-3");
 }
 
 .icon:hover {
-  color: theme('colors.green-5');
+  color: theme("colors.green-5");
 }
 
-.spotify-container {
-  background-color: theme('colors.green-3');
+.spotify-container,
+.links a::after {
+  background-color: theme("colors.green-3");
 }
 
 .card-body {
-  background-color: theme('colors.green-6');
-  color: theme('colors.green-1')
+  background-color: theme("colors.green-6");
+  color: theme("colors.green-1");
+}
+
+.card-body a::after {
+  background-color: theme("colors.green-2");
 }
 
 .pill {
-  background-color: theme('colors.green-1');
-  color: theme('colors.green-6');
+  background-color: theme("colors.green-1");
+  color: theme("colors.green-6");
 }
 
 .title {
-  color: theme('colors.green-2');
+  color: theme("colors.green-2");
 }
 
-.spotify-icon, .songs {
-  color: theme('colors.beige');
+.spotify-icon,
+.songs {
+  color: theme("colors.beige");
 }
 
-.on-repeat, [data-theme='dark'] .icon:hover {
-  color: theme('colors.green-1');
+.about-link::after {
+  background-color: theme("colors.green-5");
 }
 
-/* .nav-link:hover {
-  color: theme('colors.green-5');
-} */
-
-[data-theme='dark'] body, [data-theme='dark'] .links {
-  background-color: theme('colors.green-6');
-  color: theme('colors.green-1');
+.on-repeat,
+[data-theme="dark"] .icon:hover {
+  color: theme("colors.green-1");
 }
 
-[data-theme='dark'] .name, [data-theme='dark'] .icon, [data-theme='dark'] h2,
-[data-theme='dark'] h4, [data-theme='dark'] .footnote  {
-  color: theme('colors.green-2');
+/* Dark theme styles */
+
+[data-theme="dark"] .nav-container {
+  background: linear-gradient(theme("colors.green-6"), transparent);
 }
 
-[data-theme='dark'] .spotify-container {
-  background-color: theme('colors.green-1');
+[data-theme="dark"] body,
+[data-theme="dark"] .links {
+  background-color: theme("colors.green-6");
+  color: theme("colors.green-1");
 }
 
-[data-theme='dark'] .spotify-icon, [data-theme='dark'] .title {
-  color: theme('colors.green-3');
+[data-theme="dark"] .name,
+[data-theme="dark"] .icon,
+[data-theme="dark"] h2,
+[data-theme="dark"] h4,
+[data-theme="dark"] .footnote {
+  color: theme("colors.green-2");
 }
 
-[data-theme='dark'] .on-repeat {
-  color: theme('colors.green-4');
+[data-theme="dark"] .spotify-container,
+[data-theme="dark"] .about-link::after,
+[data-theme="dark"] .links a::after {
+  background-color: theme("colors.green-1");
 }
 
-[data-theme='dark'] .songs {
-  color: theme('colors.green-6');
+[data-theme="dark"] .spotify-icon,
+[data-theme="dark"] .title {
+  color: theme("colors.green-3");
 }
 
-[data-theme='dark'] .card-body {
-  background-color: theme('colors.beige');
-  color: theme('colors.green-5')
+[data-theme="dark"] .on-repeat {
+  color: theme("colors.green-4");
 }
 
-[data-theme='dark'] .pill {
-  background-color: theme('colors.green-6');
-  color: theme('colors.green-1');
+[data-theme="dark"] .songs {
+  color: theme("colors.green-6");
+}
+
+[data-theme="dark"] .card-body {
+  background-color: theme("colors.beige");
+  color: theme("colors.green-5");
+}
+
+[data-theme="dark"] .card-body a::after {
+  background-color: theme("colors.green-3");
+}
+
+[data-theme="dark"] .pill {
+  background-color: theme("colors.green-6");
+  color: theme("colors.green-1");
 }
 
 @font-face {
