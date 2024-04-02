@@ -57,7 +57,7 @@ export const getRecentlyPlayed = async () => {
   }
 };
 
-const RecenetlyPlayed = () => {
+export default function RecentlyPlayed() {
   const [recentlyPlayed, setRecentlyPlayed] = useState<any| null>(null)
 
   useEffect(() => {
@@ -91,5 +91,3 @@ const RecenetlyPlayed = () => {
     </div>
   )
 }
-
-export default RecenetlyPlayed

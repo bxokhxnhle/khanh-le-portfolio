@@ -62,7 +62,7 @@ export const getOnRepeat = async () => {
   }
 }
 
-const OnRepeat = () => {
+export default function OnRepeat() {
   const [onRepeat, setOnRepeat] = useState<any| null>(null)
 
   useEffect(() => {
@@ -94,5 +94,3 @@ const OnRepeat = () => {
     </div>
   )
 }
-
-export default OnRepeat
