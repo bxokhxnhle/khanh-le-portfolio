@@ -5,14 +5,18 @@ import Typed from 'typed.js'
 import { useEffect, useRef } from 'react'
 import { BsLinkedin, BsGithub, BsFillEnvelopeAtFill, BsFileEarmarkArrowDownFill } from 'react-icons/bs'
 
-export default function Home() {
+export default function Banner() {
 
   //reference to store strings
   const el = useRef(null)
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [ "developer x designer", "engineering student", "badminton enthusiast", "daydreamer", "avid photographer"],
+      strings: [ "developer x designer",
+        "engineering student",
+        "badminton enthusiast",
+        "daydreamer",
+        "avid photographer"],
       typeSpeed: 50,
       backSpeed: 75,
       backDelay: 100,

@@ -1,9 +1,32 @@
+'use client'
+
 import Link from "next/link"
 import ThemeSwitch from "./ThemeSwitch"
+import { useState, useEffect } from "react";
 
-export default function Home() {
+export default function NavBar() {
+  const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const [visible, setVisible] = useState(true)
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY
+
+    if (currentScrollPos > prevScrollPos) {
+      setVisible(false)
+    } else {
+      setVisible(true)
+    }
+
+    setPrevScrollPos(currentScrollPos)
+  }
+  
+  useEffect( () => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll)
+  })
+
   return (
-    <div className="nav">
+    <div className={`nav sticky ${visible ? 'top-0 nav-container' : ''} `}>
       <div className="max-w-mobile mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
         <nav className="py-10 flex flex-wrap justify-between">
           <h1 className="font-bold text-lg desktop:text-4xl"><a href="/">Khanh Le</a></h1>
