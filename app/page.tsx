@@ -35,11 +35,11 @@ export default function Home() {
               <Image className="hidden md:block rounded-t-[200px]" src={aboutMe} alt="profile picture" />
               <Image className="md:hidden rounded-t-[70px]" src={aboutMeMobile} alt="profile picture" />
               <div className="spotify-container flex items-center p-5">
-                <BsSpotify className="opacity-90 spotify-icon shrink-0" size="40px" alt="Spotify" />
+                <BsSpotify className="opacity-90 spotify-icon shrink-0" size="40px" />
                 <div className="ml-6 md:ml-5">
-                  <SpotifyCurrentlyPlaying />
+                  {/* <SpotifyCurrentlyPlaying /> */}
                   {/* <SpotifyRecentlyPlayed /> */}
-                  {/* <SpotifyOnRepeat /> */}
+                  <SpotifyOnRepeat />
                 </div>
               </div>
             </div>
