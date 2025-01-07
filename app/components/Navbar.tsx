@@ -35,7 +35,7 @@ export default function NavBar() {
             <Link href="#about" className="hidden md:flex hover:font-semibold nav-link">About</Link>
             <Link href="#work" className="hidden md:flex hover:font-semibold nav-link">Work</Link>
             <Link href="#projects" className="hidden md:flex hover:font-semibold nav-link">Projects</Link>
-            <Link href="https://drive.google.com/file/d/1BbLaGCdFwttUBYsUiiFD6rhyy6HO9a4m/view?usp=sharing" target="_blank" className="hover:font-semibold nav-link">Resume</Link>
+            <Link href="https://drive.google.com/file/d/1XKPrLry-brurW3Lw1X3kIvXTrL4ve7UI/view?usp=sharing" target="_blank" className="hover:font-semibold nav-link">Resume</Link>
           </div>
         </nav>
       </div>

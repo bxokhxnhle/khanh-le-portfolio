@@ -40,7 +40,7 @@ export default function Banner() {
             <Link href="https://www.linkedin.com/in/baokhanhle/" target="_blank"><BsLinkedin className="icon" size="36px" /></Link>
             <Link href="https://github.com/bxokhxnhle" target="_blank"><BsGithub className="icon" size="36px" /></Link>
             <Link href="mailto:khanh.le@uwaterloo.ca"><BsFillEnvelopeAtFill className="icon" size="36px" /></Link>
-            <Link href="https://drive.google.com/file/d/1BbLaGCdFwttUBYsUiiFD6rhyy6HO9a4m/view?usp=sharing" target="_blank"><BsFileEarmarkArrowDownFill className="icon" size="36px" /></Link>
+            <Link href="https://drive.google.com/file/d/1XKPrLry-brurW3Lw1X3kIvXTrL4ve7UI/view?usp=sharing" target="_blank"><BsFileEarmarkArrowDownFill className="icon" size="36px" /></Link>
           </div>
         <div className="text-lg pt-14 md:pt-20">Check out my adventure ↓</div>
         </section>

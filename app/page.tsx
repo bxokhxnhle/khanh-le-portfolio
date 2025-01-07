@@ -30,7 +30,7 @@ export default function Home() {
             <div className="basis-full lg:basis-5/7 font-normal text-lg leading-6">
             <p className="pb-7 hidden md:flex">I was born and raised in Ho Chi Minh City, Vietnam – an energetic and bustling area. The city has infiltrated my core; I enjoy people watching and taking a sip of coffee every morning. I have grown up living amongst all kinds of people around Vietnam and the world, making me open to all kinds of experiences and enthusiastic about embracing anomalies.</p>
             <p className="pb-7">I am a 4th year <a href="https://uwaterloo.ca/biomedical-engineering" target="_blank" className="about-link font-bold relative after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-200">Biomedical Engineering</a> at the University of Waterloo, with a passion in technology and healthcare. I have taken a keen interest in software development, as introduced to me in my individual projects, courses, and previous co-op placements. Outside of school, I enjoy dancing, photography, graphic design, and badminton. A goal of mine is to touch on more areas of software-focused BME, immersing myself in academia, and helping to build stronger communities.</p>
-            <p>Previously @ <a href="https://www.sunlife.ca/" target="_blank" className="about-link font-bold relative after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-200">Sun Life</a>, <a href="https://versa-networks.com/" target="_blank" className="about-link font-bold relative after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-200">Versa Networks</a>, <a href="https://www.loblawdigital.co/" target="_blank" className="about-link font-bold relative after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-200">Loblaw Digital</a>, <a href="https://www.purolator.com/" target="_blank" className="about-link font-bold relative after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-200">Purolator</a>.<br />Seeking 2025 New Grad Full-time Opportunities! Get my <a href="https://drive.google.com/file/d/1BbLaGCdFwttUBYsUiiFD6rhyy6HO9a4m/view?usp=sharing" target="_blank" className="about-link relative after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-200">resume ↗</a></p>
+            <p>Previously @ <a href="https://www.sunlife.ca/" target="_blank" className="about-link font-bold relative after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-200">Sun Life</a>, <a href="https://versa-networks.com/" target="_blank" className="about-link font-bold relative after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-200">Versa Networks</a>, <a href="https://www.loblawdigital.co/" target="_blank" className="about-link font-bold relative after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-200">Loblaw Digital</a>, <a href="https://www.purolator.com/" target="_blank" className="about-link font-bold relative after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-200">Purolator</a>.<br />Seeking 2025 New Grad Full-time Opportunities! Get my <a href="https://drive.google.com/file/d/1XKPrLry-brurW3Lw1X3kIvXTrL4ve7UI/view?usp=sharing" target="_blank" className="about-link relative after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-200">resume ↗</a></p>
             </div>
             <div className="lg:basis-1/4">
               <Image className="hidden md:block rounded-t-[200px]" src={aboutMe} alt="profile picture" />
@@ -38,9 +38,9 @@ export default function Home() {
               <div className="spotify-container flex items-center p-5">
                 <BsSpotify className="opacity-90 spotify-icon shrink-0" size="40px" />
                 <div className="ml-6 md:ml-5">
-                  <SpotifyCurrentlyPlaying />
+                  {/* <SpotifyCurrentlyPlaying /> */}
                   {/* <SpotifyRecentlyPlayed /> */}
-                  {/* <SpotifyOnRepeat /> */}
+                  <SpotifyOnRepeat />
                 </div>
               </div>
             </div>
@@ -136,6 +136,13 @@ export default function Home() {
               url={'https://github.com/sofrod/bme386proj'}
               description={'Assembled an ultrasonic hand scanner and developed an algorithm to read, process, detect different hand gestures and control Spotify playback from the classification'}
               tags={['Spotify Web APIs', 'Python', 'Arduino/C++']}
+            />
+            <ProjectCards
+              title={'Paintings Classifier'}
+              imageSrc={handScanner}
+              url={'https://github.com/bxokhxnhle/paintings-classifier'}
+              description={'Trained Machine Learning models to classify paintings by artist'}
+              tags={['Tensorflow', 'Python', 'ML']}
             />
           </div>
         </section>

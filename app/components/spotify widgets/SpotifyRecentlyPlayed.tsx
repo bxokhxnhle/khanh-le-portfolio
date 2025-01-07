@@ -76,7 +76,15 @@ export default function RecentlyPlayed() {
 
   if (recentlyPlayed != null && recentlyPlayed.title) {
     title = recentlyPlayed.title
-    artist = recentlyPlayed.artist
+    // artist = recentlyPlayed.artist
+    if (typeof recentlyPlayed.artist === 'string') {
+      const artistArray = recentlyPlayed.artist.split(',').map((artist: any) => artist.trim());
+      artist = artistArray.length > 2
+        ? `${artistArray.slice(0, 2).join(', ')} and others`
+        : artistArray.join(', ')
+    } else {
+      artist = recentlyPlayed.artist
+    }
   } else {
     title = 'Failed to'
     artist = 'fetch song'

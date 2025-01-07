@@ -8,7 +8,8 @@ const client_secret = process.env.SPOTIFY_CLIENT_SECRET
 const refresh_token = process.env.ON_REPEAT_SPOTIFY_REFRESH_TOKEN
 const basic = process.env.SPOTIFY_BASE64_STRING
 
-const ON_REPEAT_ENDPOINT = 'https://api.spotify.com/v1/playlists/37i9dQZF1Epx8aW9o8k1wA/tracks'
+// const ON_REPEAT_ENDPOINT = 'https://api.spotify.com/v1/playlists/37i9dQZF1Epx8aW9o8k1wA/tracks'
+const ON_REPEAT_ENDPOINT = 'https://api.spotify.com/v1/playlists/4gAv9sTv6dpL0cQul1PjtD/tracks'
 const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token'
 
 const getRandom = () => {
@@ -79,7 +80,15 @@ export default function OnRepeat() {
 
   if (onRepeat != null && onRepeat.title) {
     title = onRepeat.title
-    artist = onRepeat.artist
+    // artist = onRepeat.artist
+    if (typeof onRepeat.artist === 'string') {
+      const artistArray = onRepeat.artist.split(',').map((artist: any) => artist.trim());
+      artist = artistArray.length > 2
+        ? `${artistArray.slice(0, 2).join(', ')} and others`
+        : artistArray.join(', ')
+    } else {
+      artist = onRepeat.artist
+    }
   } else {
     title = 'Failed to'
     artist = 'fetch song'
@@ -87,7 +96,7 @@ export default function OnRepeat() {
 
   return (
     <div>
-      <p className="text-sm on-repeat">On repeat</p>
+      <p className="text-sm on-repeat">On repeat in 2024</p>
       <div className="text-sm font-bold songs">
         {onRepeat != null ? <a href={onRepeat.songUrl}>{title} by {artist}</a> : <p>{title} {artist}</p>}
       </div>
