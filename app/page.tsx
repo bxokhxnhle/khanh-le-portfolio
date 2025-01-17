@@ -11,6 +11,7 @@ import signupForm from "../public/signup-form.png"
 import lifeos from "../public/lifeos.png"
 import cochlearImplant from "../public/cochlear-implant.png"
 import handScanner from "../public/hand-scanner.png"
+import paintingsClassifier from "../public/paintings-classifier.png"
 import { BsSpotify } from 'react-icons/bs'
 import SpotifyCurrentlyPlaying from './components/spotify widgets/SpotifyCurrentlyPlaying'
 import SpotifyRecentlyPlayed from './components/spotify widgets/SpotifyRecentlyPlayed'
@@ -35,7 +36,7 @@ export default function Home() {
             <div className="lg:basis-1/4">
               <Image className="hidden md:block rounded-t-[200px]" src={aboutMe} alt="profile picture" />
               <Image className="md:hidden rounded-t-[70px]" src={aboutMeMobile} alt="profile picture" />
-              <div className="spotify-container flex items-center p-5">
+              <div className="spotify-container flex items-center p-5 md:w-64">
                 <BsSpotify className="opacity-90 spotify-icon shrink-0" size="40px" />
                 <div className="ml-6 md:ml-5">
                   {/* <SpotifyCurrentlyPlaying /> */}
@@ -131,18 +132,18 @@ export default function Home() {
               tags={['MATLAB', 'Signal Analysis']}
             /> */}
             <ProjectCards
+              title={'Paintings Classifier'}
+              imageSrc={paintingsClassifier}
+              url={'https://github.com/bxokhxnhle/paintings-classifier'}
+              description={'Trained Machine Learning models to classify paintings by artist'}
+              tags={['Tensorflow', 'Python', 'ML']}
+            />
+            <ProjectCards
               title={'Ultrasonic Hand Gesture Scanner'}
               imageSrc={handScanner}
               url={'https://github.com/sofrod/bme386proj'}
               description={'Assembled an ultrasonic hand scanner and developed an algorithm to read, process, detect different hand gestures and control Spotify playback from the classification'}
               tags={['Spotify Web APIs', 'Python', 'Arduino/C++']}
-            />
-            <ProjectCards
-              title={'Paintings Classifier'}
-              imageSrc={handScanner}
-              url={'https://github.com/bxokhxnhle/paintings-classifier'}
-              description={'Trained Machine Learning models to classify paintings by artist'}
-              tags={['Tensorflow', 'Python', 'ML']}
             />
           </div>
         </section>
